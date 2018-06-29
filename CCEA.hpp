@@ -1,6 +1,6 @@
 //
 //  CCEA.hpp
-//  MCMAS_UTM_DOMAIN
+//  MOMCMAS_UTM_DOMAIN
 //
 //  Created by Scott S Forer on 3/31/18.
 //  Copyright © 2018 MCMAS_UTM_DOMAIN. All rights reserved.
@@ -79,8 +79,7 @@ private:
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //////// Current Issues
-//Check that everything in this state is working
-//Begin simulator
+//
 //////// Resloved Issues
 //
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -154,7 +153,9 @@ void CCEA::Init_Policies(int t, int a){
         team.at(t).agent.at(a).policy.at(p).fitness = 5485933;
         team.at(t).agent.at(a).policy.at(p).current_state.resize(3);
         team.at(t).agent.at(a).policy.at(p).projected_state.resize(3);
-        team.at(t).agent.at(a).policy.at(p).inc_proj_state.resize(3*(pP->ca_inc+2));
+        team.at(t).agent.at(a).policy.at(p).inc_proj_state_x_coord.resize((pP->ca_inc));
+        team.at(t).agent.at(a).policy.at(p).inc_proj_state_y_coord.resize((pP->ca_inc));
+        team.at(t).agent.at(a).policy.at(p).inc_proj_state_z_coord.resize((pP->ca_inc));
         Set_Behaviors(t, a, p);
         //initialize the waypoints for each policy
         Init_Waypoints(t, a, p);

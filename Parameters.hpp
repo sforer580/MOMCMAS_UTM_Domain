@@ -1,6 +1,6 @@
 //
 //  Parameters.hpp
-//  MCMAS_UTM_DOMAIN
+//  MOMCMAS_UTM_DOMAIN
 //
 //  Created by Scott S Forer on 3/31/18.
 //  Copyright © 2018 MCMAS_UTM_DOMAIN. All rights reserved.
@@ -75,6 +75,7 @@ public:
     int max_z_map = 35;
     int time_max = 150;                                         //max time simulator will run
     double delta_t = 0.1;                                       //simulator time step
+    int num_time_steps = time_max/delta_t;                      //number of time steps in a simulation
     double max_flight_velocity = 5.0;                           //max velocity at which any given agetn can travel
     double max_travel_dist = max_flight_velocity*delta_t;       //max distance a agetn can travel in a time step
     int ca_radius = 5;                                          //collision avoidance radius

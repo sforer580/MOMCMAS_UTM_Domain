@@ -1,6 +1,6 @@
 //
 //  Policy.hpp
-//  MCMAS_UTM_DOMAIN
+//  MOMCMAS_UTM_DOMAIN
 //
 //  Created by Scott S Forer on 3/31/18.
 //  Copyright © 2018 MCMAS_UTM_DOMAIN. All rights reserved.
@@ -58,7 +58,9 @@ public:
     double current_speed;
     vector<double> current_state;           //vector of x, y, and z coordinates
     vector<double> projected_state;         //vector of x, y, and z coordinates
-    vector<double> inc_proj_state;
+    vector<double> inc_proj_state_x_coord;
+    vector<double> inc_proj_state_y_coord;
+    vector<double> inc_proj_state_z_coord;
     vector<vector<double>> state_history;
     bool at_final_waypoint;
     

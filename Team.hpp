@@ -1,6 +1,6 @@
 //
 //  Team.hpp
-//  MCMAS_UTM_DOMAIN
+//  MOMCMAS_UTM_DOMAIN
 //
 //  Created by Scott S Forer on 3/31/18.
 //  Copyright © 2018 MCMAS_UTM_DOMAIN. All rights reserved.
